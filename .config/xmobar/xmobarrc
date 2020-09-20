@@ -1,0 +1,25 @@
+Config { font = "xft:Fira Code: pixelsize=17:antialias=true:hinting=true"
+       , additionalFonts = []
+       , bgColor = "#292d3e"
+       , fgColor = "f07178"
+       , alpha = 50
+       , position = Top
+       , textOffset = -1
+       , iconOffset = -1
+       , lowerOnStart = True
+       , pickBroadest = False
+       , persistent = True
+       , hideOnStart = False
+       , iconRoot = "~/.xmonad/xpm/"
+       , allDesktops = True
+       , overrideRedirect = True
+       , commands = [
+	              -- Time and date
+                      Run Date "<fn=1>\xf133</fn> %b %d %Y (%H:%M)" "date" 50
+
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "<fc=#8BE9FD> %date%"
+       }
+
