@@ -13,9 +13,9 @@ picom -f &
 # -- Autostart Applications --
 pgrep -x chromium > /dev/null || chromium &
 pgrep -x discord > /dev/null || discord &
+pgrep -x rambox > /dev/null || rambox &
 pgrep -x geary > /dev/null || geary &
 pgrep -x jetbrains-toolbox > /dev/null || jetbrains-toolbox &
-
 
 bspc monitor DP-2 -d I II III IV V VI
 bspc monitor DP-4 -d VII VIII IX X
@@ -29,9 +29,11 @@ bspc config gapless_monocle      true
 
 bspc rule -a Steam desktop='^10'
 bspc rule -a discord desktop='^9'
+bspc rule -a Rambox desktop='^9'
 bspc rule -a Geary desktop='^6'
 bspc rule -a Clion dekstop='^3'
 bspc rule -a IntelliJ desktop='^4'
+bspc rule -a code-oss desktop='^3'
 bspc rule -a jetbrains-toolbox state=floating
 bspc rule -a factorio desktop='^5' state=fullscreen
 bspc rule -a Gimp desktop='^8' state=floating follow=on
