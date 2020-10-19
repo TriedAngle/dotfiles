@@ -38,9 +38,7 @@ background = ${colors.background}
 foreground = ${colors.foreground}
 
 line-size = 2
-line-color = #f00
-border-size = 1
-border-color = #00000000
+border-size = 0
 padding = 1
 module-margin = 1
 
@@ -51,7 +49,7 @@ font-3 = "Noto Sans Symbols2:size=15;1"
 
 modules-left = date bspwm xwindow 
 modules-center = mpd
-modules-right = memory cpu wlan eth battery temperature xkeyboard
+modules-right = memory cpu wlan eth battery xkeyboard
 
 tray-position = right
 tray-padding = 2
@@ -153,8 +151,8 @@ format-disconnected =
 type = internal/date
 interval = 1
 
-date = "%a %d.%m "
-date-alt = "%A the %d. of %B [%m] "
+date = "%a %d.%m.%Y "
+date-alt = "%A %B %d.%m.%Y "
 
 time = %H:%M
 time-alt = %H:%M:%S
