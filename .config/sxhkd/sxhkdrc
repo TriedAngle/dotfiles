@@ -126,7 +126,7 @@ super + shift + {y,u,i,o,p}
 
 # screenshot
 super + Print
-    maim ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%m-%s).png
+    maim ~/Pictures/Screenshots/(date +%Y-%m-%d_%H-%m-%s).png
 
 super + shift + Print
-    maim -s ~/Pictures/Sreenshots/$(date +%Y-%m-%d_%H-%m-%s).png
+    maim -s ~/Pictures/Sreenshots/(date +%Y-%m-%d_%H-%m-%s).png
